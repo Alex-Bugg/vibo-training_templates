@@ -1,0 +1,24 @@
+body {
+  font-family: 'Work Sans';
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// header
+
+.main_header {
+  padding-top: 48px;
+  // background-color: #35b7f6;
+  background-image: url(../images/dest/backgrount-header.svg);
+  background-size: cover;
+}
+
+.main_header__wrapper_top {
+  display: flex;
+  justify-content: space-between;
+}
