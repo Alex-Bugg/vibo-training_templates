@@ -378,6 +378,14 @@
 }
 
 @media(max-width:400px) {
+  .main_header_navigation {
+    width: 100%;
+  }
+
+  .navigation__link {
+    padding: 40px 120px;
+  }
+
   .now_available__button--get {
     min-width: 300px;
     width: 100%;
