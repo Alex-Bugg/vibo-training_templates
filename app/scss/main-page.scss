@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   padding: 0 20px;
   width: 100%;
   margin: 0 auto;
@@ -45,7 +45,7 @@ body {
 
 .main_header__logo {
   fill: #ffffff;
-  transition: linear 0.2s;
+  transition: fill ease 0.2s;
 }
 
 .main_header__logo:hover {
@@ -76,7 +76,7 @@ body {
   font-weight: 600;
   color: #ffffff;
   padding: 10px;
-  transition: linear 0.2s;
+  transition: color ease 0.2s;
 }
 
 .navigation__link:hover {
@@ -112,7 +112,8 @@ body {
   font-weight: 700;
   text-align: center;
   max-width: 520px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  line-height: 60px;
 }
 
 .main_header__paragraph {
@@ -128,7 +129,7 @@ body {
   color: #ffffff;
   padding: 10px;
   border-radius: 7px;
-  transition: linear 0.2s;
+  transition: background-color ease 0.2s, color ease 0.2s;
   font-weight: 600;
   min-width: 167px;
   margin-right: 27px;
@@ -162,7 +163,6 @@ body {
   justify-content: space-between;
   padding-top: 110px;
   padding-bottom: 144px;
-  margin-bottom: 85px;
 }
 
 .carts_info__phone {
@@ -227,7 +227,7 @@ body {
 // stable 
 
 .stable {
-  margin-bottom: 110px;
+  padding: 100px 0;
 }
 
 .stable_wrapper {
@@ -270,7 +270,7 @@ body {
   border: 2px solid #33d2fd;
   border-radius: 7px;
   background-color: #33d2fd;
-  transition: linear 0.2s;
+  transition: color ease 0.2s, background-color ease 0.2s;
 }
 
 .stable__button:hover {
@@ -281,54 +281,58 @@ body {
 
 .stable__wrapper_accordion {
   max-width: 550px;
+  width: 100%;
 }
 
-.stable__accordion_item {
+.accordion_item {
+  min-height: 80px;
   width: 100%;
-  max-width: 550px;
+  box-shadow: 0px 4px 9px 3px rgba(0, 0, 0, 0.21);
+  margin-bottom: 20px;
+}
+
+.accordion_item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion_title {
   width: 100%;
   min-height: 80px;
-  padding: 32px 40px;
-  margin-bottom: 20px;
-  box-shadow: 0px 2px 14px -5px #ccc;
-  background-repeat: no-repeat;
-  background-image: url(../images/dest/acard-ico-1.svg);
-  background-position: 35px 30px;
+  max-width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #233148;
+  border: 0;
+  background-color: #fff;
+}
+
+.accardion_img__wrap {
+  width: 30px;
+  margin-right: 25px;
+}
+
+.accordion__paragraph {
+  padding: 0 50px 30px 80px;
+  line-height: 27px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.accordion__content {
+  display: none;
+}
+
+.accordion__content.accordion_active .accordion_title {
+  display: block;
   background-color: #33d2fd;
 }
 
-.stable__accordion_item:nth-child(2) {
-  background-image: url(../images/dest/acard-ico-2.svg);
-  background-position: 40px 30px;
-}
-
-.stable__accordion_item:nth-child(3) {
-  background-image: url(../images/dest/acard-ico-3.svg);
-}
-
-.stable__accordion_item:last-child {
-  margin-bottom: 0;
-  background-image: url(../images/dest/acard-ico-4.svg);
-}
-
-.accordion_item_title {
-  font-size: 15px;
-  color: #233148;
-  line-height: 27px;
-  font-weight: 600;
-  padding-left: 40px;
-  cursor: pointer;
-}
-
-.accordion_item_title.accodrion_active+.accordion_item_paragraph {
-  display: block;
-}
-
-.accordion_item_paragraph {
-  line-height: 27px;
-  color: #fff;
-  font-weight: 400;
-  display: none;
+.accordion_item.accordion_active .accordion__content {
+  background-color: #33d2fd;
 }
 
 // everything_you_need 
@@ -343,8 +347,11 @@ body {
   justify-content: space-between;
 }
 
-.everything_you_need__code svg {
+
+.everything_you_need__code {
+  max-width: 530px;
   width: 100%;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
 }
 
 .everything_you_need_wrapper_info {
@@ -393,7 +400,6 @@ body {
   background-size: cover;
   background-position: center;
   padding: 100px 0;
-  margin-bottom: 150px;
 }
 
 .now_available__wrapper {
@@ -484,7 +490,7 @@ body {
   height: 100%;
   opacity: 0;
   z-index: 2;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.2s ease;
   background: linear-gradient(to bottom, #f5317f, #ff7c6e);
 }
 
@@ -495,7 +501,7 @@ body {
 // information
 
 .information {
-  margin-bottom: 85px;
+  padding: 85px;
 }
 
 .information__wrapper_info {
@@ -532,7 +538,7 @@ body {
 
 .information__get--title {
   font-size: 30px;
-  line-height: 60px;
+  line-height: 2;
   color: #233148;
   font-weight: 600;
   text-align: center;
@@ -607,7 +613,7 @@ body {
 
 .social_ico {
   fill: #ffffff;
-  transition: linear 0.2s;
+  transition: fill ease 0.2s;
 }
 
 .social_ico:hover {

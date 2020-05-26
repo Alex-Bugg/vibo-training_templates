@@ -3,12 +3,9 @@
     margin-bottom: 50px;
   }
 
-  .carts_info_wrapper {
-    margin-bottom: 30px;
-  }
 
   .stable {
-    margin-bottom: 30px;
+    padding: 30px 0;
   }
 
   .stable__wrapper_info {
@@ -39,7 +36,7 @@
   }
 
   .everything_you_need {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 }
 
@@ -66,7 +63,7 @@
   }
 
   .carts_info__phone {
-    display: none;
+    margin-top: 0;
   }
 
   .now_available__link {
@@ -75,23 +72,27 @@
 
   .now_available {
     padding: 40px 0;
-    margin-bottom: 70px;
   }
 
   .carts_info__wrapper_carts {
     justify-content: center;
+    margin-bottom: 20px;
   }
 
   .information {
-    margin-bottom: 40px;
+    padding: 30px;
   }
 
   .information__wrapper_info {
     margin-bottom: 40px;
   }
 
+  .information__get--title {
+    margin-bottom: 0;
+  }
+
   .information__get--paragraph {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   .now_available__link--wrapper {
@@ -109,8 +110,21 @@
 }
 
 @media(max-width:950px) {
+
+  .everything_you_need__title {
+    margin-bottom: 15px;
+  }
+
+  .everything_you_need_soft {
+    margin-bottom: 10px;
+  }
+
+  .everything_you_need_soft:nth-child(3) {
+    margin-bottom: 10px;
+  }
+
   .main_header__wrapper_title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .main_header__phone {
@@ -148,7 +162,7 @@
   }
 
   .main_header__phone {
-    display: none;
+    max-width: 160px;
   }
 
   .carts_info__cart:first-child {
@@ -177,27 +191,32 @@
     padding-top: 20px;
   }
 
-  .now_available__phone {
-    display: none;
-  }
-
   .main_header_navigation_wrapper {
     height: 100%;
   }
 
   .main_header_navigation {
     position: absolute;
-    width: 400px;
+    width: 100%;
     height: 500px;
     background-color: rgba(14, 209, 240, 0.8);
     right: 0;
-    top: -100%;
+    top: -1000px;
     padding-top: 80px;
     transition: ease-in 0.3s;
   }
 
   .main_header_navigation.toggle_active {
     top: 0;
+  }
+
+  .now_available__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .now_available__button--get {
+    margin-bottom: 15px;
   }
 
 
@@ -225,6 +244,8 @@
   .navigation__link {
     color: #111;
     padding: 40px 170px;
+    width: 100%;
+    text-align: center;
   }
 
   .navigation__button_burger {
@@ -344,17 +365,26 @@
   .everything_you_need_wrapper_info {
     margin-bottom: 0;
   }
+
+  .main_header__phone {
+    max-width: 130px;
+    margin-bottom: 20px;
+  }
 }
 
 @media(max-width:450px) {
   .counte_me_in_wrapper {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .counte_me_in__input {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .accordion__paragraph {
+    padding: 0 40px 20px 30px;
   }
 }
 

@@ -1,13 +1,7 @@
-var accardionTitle = document.getElementsByClassName("accordion_item_title"),
-  contentAccardion = document.getElementsByClassName("accordion_item_paragraph");
+let toggleBurger = document.querySelector('.navigation__button_burger');
+let navHeader = document.querySelector('.main_header_navigation');
 
-for (var i = 0; i < accardionTitle.length; i++) {
-  accardionTitle[i].addEventListener("click", function () {
-    if (!(this.classList.contains("accodrion_active"))) {
-      for (var i = 0; i < accardionTitle.length; i++) {
-        accardionTitle[i].classList.remove("accodrion_active");
-      }
-      this.classList.add("accodrion_active");
-    }
-  })
+toggleBurger.onclick = function () {
+  toggleBurger.classList.toggle("toggle_active");
+  navHeader.classList.toggle("toggle_active");
 };
