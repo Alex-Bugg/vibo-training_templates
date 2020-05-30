@@ -161,8 +161,7 @@ body {
 .carts_info_wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 110px;
-  padding-bottom: 144px;
+  padding: 110px 25px 120px;
 }
 
 .carts_info__phone {
@@ -184,7 +183,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 270px;
-  padding: 55px 30px 40px;
+  padding: 64px 24px 27px;
   box-shadow: 1px 6px 23px -8px #ccc
 }
 
@@ -208,13 +207,13 @@ body {
 }
 
 .cart__ico {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .cart__title {
   color: #233148;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .cart__paragraph {
@@ -227,7 +226,7 @@ body {
 // stable 
 
 .stable {
-  padding: 100px 0;
+  padding: 125px 0;
 }
 
 .stable_wrapper {
@@ -323,11 +322,12 @@ body {
 }
 
 .accordion__content {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height ease-out 0.2s;
 }
 
-.accordion__content.accordion_active .accordion_title {
-  display: block;
+.accordion_item.accordion_active .accordion_title {
   background-color: #33d2fd;
 }
 
@@ -338,7 +338,7 @@ body {
 // everything_you_need 
 
 .everything_you_need {
-  padding: 70px 0;
+  padding: 81px 0;
   background-color: #fafafc;
 }
 
@@ -399,7 +399,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 103px 0;
 }
 
 .now_available__wrapper {
@@ -501,7 +501,7 @@ body {
 // information
 
 .information {
-  padding: 85px;
+  padding: 92px;
 }
 
 .information__wrapper_info {
@@ -512,7 +512,6 @@ body {
 }
 
 .information_info_item {
-  flex-grow: 1;
   min-width: 150px;
   flex-wrap: wrap;
   margin-bottom: 20px;
@@ -587,7 +586,7 @@ body {
 
 .main_footer {
   background-color: #233148;
-  padding: 40px 0;
+  padding: 34px 0;
 }
 
 .main_footer__wrapper {
