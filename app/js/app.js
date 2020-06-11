@@ -7,8 +7,9 @@ toggleBurger.onclick = function () {
 };
 
 let accBlock = document.querySelectorAll('.accordion_item');
-for (var i = 0; i < accBlock.length; i++) {
-  accBlock[i].onclick = function () {
+
+for (var j = 0; j < accBlock.length; j++) {
+  accBlock[j].onclick = function () {
     this.classList.toggle('accordion_active');
     var content = this.querySelector('.accordion__content');
     if (content.style.maxHeight) {

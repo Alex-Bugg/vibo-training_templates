@@ -322,9 +322,7 @@ body {
 }
 
 .accordion__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height ease-out 0.2s;
+  display: none;
 }
 
 .accordion_item.accordion_active .accordion_title {
@@ -333,7 +331,12 @@ body {
 
 .accordion_item.accordion_active .accordion__content {
   background-color: #33d2fd;
+  display: block;
 }
+
+// .accordion_active {
+//   background-color: #33d2fd;
+// }
 
 // everything_you_need 
 
