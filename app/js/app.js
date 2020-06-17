@@ -6,16 +6,19 @@ toggleBurger.onclick = function () {
   navHeader.classList.toggle("toggle_active");
 };
 
-let accBlock = document.querySelectorAll('.accordion_item');
+let accBtn = document.querySelectorAll('.accordion_title');
 
-for (var j = 0; j < accBlock.length; j++) {
-  accBlock[j].onclick = function () {
-    this.classList.toggle('accordion_active');
-    var content = this.querySelector('.accordion__content');
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
+document.querySelectorAll('.accordion_title').forEach((item) =>
+  item.addEventListener('click', () => {
+    const parent = item.parentNode;
+
+    if (parent.classList.contains('accordion_active')) {
+      parent.classList.remove('accordion_active');
     } else {
-      content.style.maxHeight = content.scrollHeight + 'px'
+      document.querySelectorAll('.accordion_item')
+        .forEach((child) => child.classList.remove('accordion_active'));
+
+      parent.classList.add('accordion_active')
     }
-  }
-};
+  })
+);
